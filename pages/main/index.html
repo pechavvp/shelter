@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../normalize.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Shelter</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header wrapper">
 
         <div class="header__logo logo">
             <h2 class="logo__title">Cozy House</h2>
@@ -15,18 +17,23 @@
         </div>
 
         <ul class="header__menu menu">
-            <li class="menu-item">About the shelter</li>
-            <li class="menu-item">Our pets</li>
-            <li class="menu-item">Help the shelter</li>
-            <li class="menu-item">Contacts</li>
+            <li class="menu__item"><a href="" class="menu__link">About the shelter</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Our pets</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Help the shelter</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Contacts</a></li>
         </ul>
 
     </header>
 
-    <div class="main-block">
-        <h2 class="main-block__title">Not only people need a house</h2>
-        <p class="main-block__text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-        <a href="" class="main-block__button">Make a friend</a>
+    <div class="main-block wrapper">
+        <div class="main-block__info">
+            <need class="main-block__title">Not only people <br> need a house</h2>
+            <p class="main-block__text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+            <a href="" class="main-block__button">Make a friend</a>
+        </div>
+        <div class="main-block__image-block">
+            <img class="main-block__image" src="../../assets/img/start-screen-puppy.png" alt="Puppy">
+        </div>
     </div>
 
     <div class="about-block">
@@ -105,5 +112,31 @@
             </li>
         </ul>
     </div>
+
+    <div class="donation-block">
+        <div class="donation-block__image"></div>
+        <div class="donation-block__info">
+            <h3 class="donation-block__title">You can also make a donation</h3>
+            <p class="donation-block__bank-name">Name of the bank / Type of bank account</p>
+            <div class="donation-block__card-number">8380 2880 8028 8791 7435</div>
+            <p class="donation-block__text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+    </div>
+
+    <footer class="footer-block">
+        <div class="footer-block__contacts">
+            <h3 class="footer-block__contacts-title">For questions and suggestions</h3>
+            <p class="footer-block__contacts-email">email@shelter.com</p>
+            <p class="footer-block__contacts-phone">+13 674 567 75 54</p>
+        </div>
+        <div class="footer-block__address">
+            <h3 class="footer-block__address-title">We are waiting for your visit</h3>
+            <ul class="footer-block__address-list">
+                <li class="footer-block__address-item">1 Central Street, Boston (entrance from the store)</li>
+                <li class="footer-block__address-item">18 South Park, London</li>
+            </ul>
+        </div>
+        <div class="footer-block__image"></div>
+    </footer>
 </body>
 </html>
