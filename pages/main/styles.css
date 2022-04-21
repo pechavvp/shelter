@@ -38,6 +38,7 @@
   display: flex;
   justify-content: space-between;
   background-image: url(../../assets/img/start-screen-background.jpg);
+  height: 180px;
 }
 
 .logo {
@@ -49,12 +50,14 @@
   color: #F1CDB3;
   font-weight: 400;
   letter-spacing: 0.06em;
+  margin: 60px 0 0 0;
 }
 .logo__subtitle {
   font-family: "Arial";
   font-size: 13px;
   color: #FFFFFF;
   letter-spacing: 0.1em;
+  margin: 9px 0 0 0;
 }
 
 .menu {
@@ -62,7 +65,7 @@
   list-style: none;
 }
 .menu__item {
-  margin-left: 35px;
+  margin: 63px 0 0 36px;
 }
 .menu__link {
   text-decoration: none;
@@ -74,23 +77,26 @@
 .main-block {
   background-image: url(../../assets/img/start-screen-background.jpg);
   display: flex;
-  align-items: center;
+  gap: 42px;
 }
 .main-block__info {
   height: 332px;
+  margin: 164px 0 0 0;
 }
 .main-block__title {
-  margin: 0;
   font-family: "Georgia";
   font-size: 44px;
   color: #FFFFFF;
   font-weight: 400;
+  line-height: 130%;
 }
 .main-block__text {
   font-family: "Arial";
   font-size: 15px;
   color: #CDCDCD;
   width: 460px;
+  margin: 41px 0 42px 0;
+  line-height: 160%;
 }
 .main-block__button {
   display: flex;
@@ -104,9 +110,258 @@
   width: 207px;
   height: 52px;
   border-radius: 100px;
+  letter-spacing: 0.06em;
 }
 .main-block__image-block {
   height: 728px;
+}
+
+.about-block {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  height: 588px;
+}
+.about-block__info {
+  width: 430px;
+  margin: 60px 0 0 0;
+}
+.about-block__title {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
+  letter-spacing: 0.06em;
+  line-height: 130%;
+  margin-bottom: 24px;
+}
+.about-block__text {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 15px;
+  color: #4C4C4C;
+  line-height: 24px;
+}
+.about-block__image {
+  margin: 81px 0 0 0;
+}
+
+.pets-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  height: 877px;
+}
+.pets-block__title {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
+  text-align: center;
+  margin: 81px 0 42px 0;
+  letter-spacing: 0.06em;
+  line-height: 130%;
+}
+.pets-block__list {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+.pets-block__nav-button {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 30px 0 0 0;
+}
+.pets-block__items {
+  display: flex;
+  gap: 90px;
+  padding: 0;
+}
+.pets-block__item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pets-block__item-name {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 20px;
+  color: #545454;
+  margin: 30px 0 30px 0;
+  letter-spacing: 0.06em;
+}
+.pets-block__item-button {
+  width: 187px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  background-color: transparent;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 17px;
+  color: #292929;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+}
+.pets-block__link-button {
+  display: block;
+  width: 261px;
+  height: 52px;
+  background-color: #F1CDB3;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 17px;
+  text-decoration: none;
+  color: #292929;
+  text-align: center;
+  line-height: 52px;
+  margin: 74px 0 0 0;
+  letter-spacing: 0.06em;
+}
+
+.help-block {
+  height: 530px;
+}
+.help-block__title {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
+  text-align: center;
+  margin: 81px 0 58px 0;
+  letter-spacing: 0.06em;
+  line-height: 130%;
+}
+.help-block__list {
+  display: flex;
+  column-gap: 119px;
+  row-gap: 34px;
+  flex-wrap: wrap;
+  width: 1026px;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: center;
+}
+.help-block__item {
+  list-style: none;
+  text-align: center;
+}
+.help-block__item-icon {
+  margin-bottom: 6px;
+}
+.help-block__item-text {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 20px;
+  color: #545454;
+  letter-spacing: 0.06em;
+}
+
+.donation-block {
+  height: 462px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #F6F6F6;
+}
+.donation-block__image {
+  margin-top: 91px;
+}
+.donation-block__title {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
+  letter-spacing: 0.06em;
+  line-height: 130%;
+  margin: 0 0 18px 0;
+}
+.donation-block__bank-name {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 15px;
+  color: #545454;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+.donation-block__card-number {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 20px;
+  color: #545454;
+  width: 349px;
+  height: 43px;
+  background-color: #F1CDB3;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  letter-spacing: 0.06em;
+}
+.donation-block__card-icon {
+  display: block;
+}
+.donation-block__info {
+  width: 380px;
+  margin: 81px 0 0 0;
+}
+.donation-block__text {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 12px;
+  color: #B2B2B2;
+  font-style: italic;
+  line-height: 18px;
+}
+
+.footer-block {
+  background-image: url(../../assets/img/footer-gradient-background.png);
+  height: 350px;
+  display: flex;
+  gap: 160px;
+}
+.footer-block__contacts-title, .footer-block__address-title {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  color: #FFFFFF;
+  letter-spacing: 0.06em;
+  margin: 57px 0 38px 0;
+  line-height: 130%;
+}
+.footer-block__contacts-list, .footer-block__address-list {
+  padding: 0;
+}
+.footer-block__contacts-item, .footer-block__address-item {
+  list-style: none;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 20px;
+  color: #F1CDB3;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+}
+.footer-block__address {
+  margin-left: -18px;
+}
+.footer-block__address-title, .footer-block__address-item {
+  margin-bottom: 32px;
+}
+.footer-block__image-block {
+  display: flex;
+  align-items: flex-end;
 }
 
 /*# sourceMappingURL=styles.css.map */
